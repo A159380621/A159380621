@@ -16,8 +16,10 @@
     <header>
         <div class="container">
             <div id="d-flex-h1-nav">
-                
-                <h1><span>"</span>Bon App<span>"</span></h1>
+              <div class="fe">
+                    <h1><span>"</span>Bon App<span>"</span></h1>
+                </div>
+                <div class="test">
                 <nav>
                     <ul>
                         <li>Plats</li>
@@ -25,15 +27,19 @@
                         <li>Contact</li>
                     </ul>
                 </nav>
-            <a href="something" class="button1">Button</a>    
+                <div  class="button1">Button</div>
+                    <!--Mon Button black-->  
+              </div>
             </div>    
             
         </div>
 
     </header>
+        <!--Header Fin -->
     <main>
         <section class="container" id="table-section-1">
            <h2>Nos Abonnement</h2> 
+              <!-- Table--> 
            <table>
             <tbody>
             <tr>
@@ -57,48 +63,111 @@
  
             </tbody>
         </table>
+          <!-- Table-->  
         </section>
         <section class="container" id="d-flex-js">
             <h2>Les plats a la carte</h2>
         </section>
             <div id="background" class="container">
         </div>
-        <div class="row" class="container">
-
-            <div class="column">
-              <div class="card">
-                <img src="assets/img/pic01.jpg" alt="cadenas">
-                <h2>Some text</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque repudiandae aut pariatur aliquam ipsum vel quae facere? Temporibus eligendi, quisquam corporis voluptates dolorum mollitia obcaecati laboriosam iure voluptatem commodi sequi?</p>
-              </div>
-            </div>
-            
-            <div class="column">
-              <div class="card">
-                <img src="assets/img/pic02.jpg" alt="">
-                <h2>Some text</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque repudiandae aut pariatur aliquam ipsum vel quae facere? Temporibus eligendi, quisquam corporis voluptates dolorum mollitia obcaecati laboriosam iure voluptatem commodi sequi?</p>
-              </div>
-            </div>
-
-            <div class="column">
-                <div class="card">
-                  <img src="assets/img/pic03.jpg" alt="">
-                  <h2>Some text</h2>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque repudiandae aut pariatur aliquam ipsum vel quae facere? Temporibus eligendi, quisquam corporis voluptates dolorum mollitia obcaecati laboriosam iure voluptatem commodi sequi?</p>
-                </div>
-              </div>
-              <div class="column">
-                <div class="card">
-                  <img src="assets/img/pic04.jpg" alt="">
-                  <h2>Some text</h2>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque repudiandae aut pariatur aliquam ipsum vel quae facere? Temporibus eligendi, quisquam corporis voluptates dolorum mollitia obcaecati laboriosam iure voluptatem commodi sequi?</p>
-                </div>
-              </div>
         
-      
-        </div>
-    </main>
+        <div class="cards">
+                
+            <article class="card">
+                <a href="#">
+                    <picture class="thumbnail">
+                        <img src="http://www.abbeyjfitzgerald.com/wp-content/uploads/2017/02/image-example-01.jpg" alt="A banana that looks like a bird">
+                    </picture>
+                    <div class="card-content">
+
+                        <h2>Vacation Image 01</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptatum corrupti molestias laudantium maxime, magnam voluptas enim, sapiente accusamus ducimus, velit minus quia aliquid harum at est doloremque fugiat quaerat!</p>
+                    </div><!-- .card-content -->
+                </a>
+            </article><!-- .card -->
+
+            <article class="card">
+                <a href="#">
+                    <picture class="thumbnail">
+                        <img src="assets/img/pic02.jpg" alt="Norwegian boller">
+                    </picture>
+                    <div class="card-content">
+                        <h2>Vacation Image 02</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptatum corrupti molestias laudantium maxime, magnam voluptas enim, sapiente accusamus ducimus, velit minus quia aliquid harum at est doloremque fugiat quaerat!</p>
+                    </div><!-- .card-content -->
+                </a>
+            </article><!-- .card -->
+
+            <article class="card">
+                <a href="#">
+                  <picture class="thumbnail">
+                    <img src="assets/img/pic03.jpg" alt="Norwegian boller">
+                </picture>
+                    <div class="card-content">
+                        <h2>Vacation Image 03</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptatum corrupti molestias laudantium maxime, magnam voluptas enim, sapiente accusamus ducimus, velit minus quia aliquid harum at est doloremque fugiat quaerat!</p>
+                    </div><!-- .card-content -->
+                </a>
+            </article><!-- .card -->
+
+            <article class="card">
+                <a href="#">
+                  <picture class="thumbnail">
+                    <img src="assets/img/pic04.jpg" alt="Norwegian boller">
+                </picture>
+                    <div class="card-content">
+                        <h2>Vacation Image 04</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptatum corrupti molestias laudantium maxime, magnam voluptas enim, sapiente accusamus ducimus, velit minus quia aliquid harum at est doloremque fugiat quaerat!</p>
+                    </div><!-- .card-content -->
+                </a>
+            </article><!-- .card -->
+          </div>
+      </section><!-- .cards -->
+     </main> 
+     <footer>
+        <div class="container">
+          <h2>Formulaire de contact</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis laudantium accusantium officia doloribus architecto nulla, explicabo eaque, velit cupiditate aut facilis quo id consectetur ipsum aliquam hic! Commodi, error impedit.</p>
+        <form action="#" method="post">
+              <div class="group">
+                <input type="radio"  id="rb1" />
+                <label for="rb1">Check this</label>
+                <input type="radio"  id="rb2" />
+                <label for="rb2">... or this...</label>
+                <input type="radio"  id="rb3" />
+                <label for="rb3">or maybe this</label>  
+            </div>
+            <fieldset>
+                <label for="nom">Nom <em>*</em></label>
+
+                <input id="nom" placeholder="prenom" autofocus="" required=""><br>
+                <label for="email">Email <em>*</em></label>
+                <input id="email" type="email" placeholder="email" required="" pattern="[a-zA-Z]*.[a-zA-Z]"><br>
+            </fieldset>
+                <label >game</label>
+                <select >
+                  <option value="F" >play</option>
+                  <option value="H" >switch</option>
+                </select><br>
+                <label>game</label>
+                <select >
+                  <option value="F" >play</option>
+                  <option value="H">switch</option>
+                </select><br>
+                <h2>Votre Message</h2>
+                <textarea id="comments"></textarea>
+            </fieldset>
+            <fieldset>
+                <label >Password (8 characters minimum):</label>
+                <input type="password"  id="password"
+                      minlength="8" required>
+
+            </fieldset>
+          <input type="submit" value="Envoyer le formulaire">
+        </form>
+     </footer>
+
+
 
     <script src="assets/js/script.js"></script>
 </body>

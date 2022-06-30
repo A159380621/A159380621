@@ -1,10 +1,10 @@
 let images = [
+
     {
-        "h1": "Un super titre ", 
+        "h1": "Un super titre ",  
         "p": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sapien dolor, pellentesque vitae dignissim in, sollicitudin nec diam. Donec vitae accumsan enim, id malesuada ex. Pellentesque odio turpis, iaculis id sodales vel, placerat vitae augue. Fusce porta sem fringilla sagittis venenatis. Nulla a neque in purus porta molestie in tempor nunc. Morbi velit neque, cursus ac commodo non, elementum at dui. Pellentesque eget porttitor tellus. Nulla varius sollicitudin ultrices.",  
-        "Image": "assets/img/img-01.jpg"
+        "Image": "assets/img/img-02.jpg"
     },
-  
     {
         "h1": "Un super titre ",  
         "p": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sapien dolor, pellentesque vitae dignissim in, sollicitudin nec diam. Donec vitae accumsan enim, id malesuada ex. Pellentesque odio turpis, iaculis id sodales vel, placerat vitae augue. Fusce porta sem fringilla sagittis venenatis. Nulla a neque in purus porta molestie in tempor nunc. Morbi velit neque, cursus ac commodo non, elementum at dui. Pellentesque eget porttitor tellus. Nulla varius sollicitudin ultrices.",  
@@ -42,7 +42,6 @@ for(let keys of images){
     let h1 = document.createElement("h2")
     let p = document.createElement("p")
     img.src = keys.Image;
-    img.style.width = "35%";
     elment.appendChild(img);
     elment.appendChild(h1);
     elment.appendChild(p)
@@ -58,3 +57,15 @@ for(let keys of images){
     let d = document.getElementById('d-flex-js');
     d.appendChild(elment);
 }
+
+
+let reset = document.querySelector('.button1').addEventListener('click', function(e) {
+    document.body.innerHTML = "";
+    document.body.style.backgroundColor = "#65C1BE";
+    let h1 = document.createElement('h2')
+    let textblague = document.createTextNode('C est une blague ... refrech la page')
+    h1.setAttribute('class', 'mg-top-h1')
+    h1.appendChild(textblague)
+    document.body.appendChild(h1);
+
+})
